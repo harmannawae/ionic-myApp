@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="tertiary">
+        <ion-title>
+            หน้าแรก
+        </ion-title>
+        <ion-buttons slot="primary">
+            <ion-button (click)="goToProfile()">
+                <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-grid>
+        <ion-row>
+            <!-- <ion-col class="menu-item">
+                <a routerLink="/page1">
+                    <img src="assets/icon/menu1.png">
+                    <div>หน้า 1</div>
+                </a>
+            </ion-col> -->
+            <ion-col class="menu-item">
+                <a routerLink="/member">
+                    <img src="assets/icon/menu2.png">
+                    <div>ข้อมูลสมาชิก</div>
+                </a>
+            </ion-col>
+            <!-- <ion-col class="menu-item">
+                <a routerLink="/page3">
+                    <img src="assets/icon/menu3.png">
+                    <div>หน้า 3</div>
+                </a>
+            </ion-col> -->
+        </ion-row>
+    </ion-grid>
+</ion-content>
